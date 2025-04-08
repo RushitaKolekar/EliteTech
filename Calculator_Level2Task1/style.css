@@ -1,0 +1,103 @@
+/* Center the entire calculator on the page */
+
+body {
+    margin: 0;
+    /* Remove default margin */
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    background-color: #f4f4f4;
+    /* Optional background color */
+}
+
+.container {
+    text-align: center;
+    /* Center-align the heading and calculator */
+}
+
+.h1-text {
+    margin-bottom: 20px;
+    /* Space between heading and calculator */
+}
+
+
+/* Style for the calculator container */
+
+.Calculator {
+    display: flex;
+    flex-direction: column;
+    /* Stack rows vertically */
+    align-items: center;
+    /* Center rows horizontally */
+    padding: 20px;
+    /* Add space inside the calculator */
+    background-color: white;
+    /* Background color of the calculator */
+    border-radius: 10px;
+    /* Smooth corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for better appearance */
+    width: 300px;
+    /* Fixed width for the calculator */
+}
+
+
+/* Style for rows of buttons */
+
+.row {
+    display: flex;
+    /* Arrange buttons in a row */
+    justify-content: space-between;
+    /* Even spacing between buttons */
+    margin: 8px 0;
+    /* Vertical spacing between rows */
+    width: 100%;
+    /* Stretch rows to fit the calculator's width */
+}
+
+
+/* Style for buttons */
+
+.button {
+    flex: 1;
+    /* All buttons take equal space */
+    padding: 20px;
+    /* Space inside each button */
+    margin: 3px;
+    /* Space between buttons */
+    border: 2px solid black;
+    /* Button border */
+    border-radius: 9px;
+    /* Smooth button corners */
+    text-align: center;
+    /* Center the text inside buttons */
+    font-size: 18px;
+    /* Button text size */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+
+/* Style for input box */
+
+.row input {
+    width: 100%;
+    /* Input box spans full width of the calculator */
+    padding: 10px 15px;
+    /* Add padding inside the input */
+    border: 2px solid black;
+    /* Border styling */
+    border-radius: 5px;
+    /* Rounded corners for input */
+    font-size: 23px;
+    /* Larger text size for input */
+    text-align: right;
+    /* Align input text to the right (like a real calculator) */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
